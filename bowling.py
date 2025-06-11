@@ -1,2 +1,6 @@
 def calc_score(rounds):
-    return 0
+    total_score = 0
+    rounds = rounds.replace(" ", "")
+    for score in rounds:
+        total_score += int(score)
+    return total_score
