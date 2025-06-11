@@ -10,3 +10,6 @@ class TestCalcScore(unittest.TestCase):
 
     def test_does_one_open_frame(self):
         self.assertEqual(calc_score("23"), 5)
+
+    def test_does_two_open_frames(self):
+        self.assertEqual(calc_score("23 62"), 13)    
